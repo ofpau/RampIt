@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Añadir</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" floating>Título</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Descripción</ion-label>
+      <ion-textarea placeholder="Opcional: habla un poco del obstáculo que compartes!" style="padding-left:6px; padding-right:6px;"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Localización</ion-label>
+      <ion-input id="locationInput" type="text" readonly=true value="{{locationString}}"></ion-input>
+    </ion-item>
+
+    <ion-item  style="margin-top: 16px;">
+      <button ion-button large icon-only outline style="width: 20%;" (click)=takePhoto() >
+        <ion-icon name="camera"></ion-icon>
+      </button>
+      <button ion-button large outline style="width:75%; margin-left:4px;" (click)=submit()>
+        Envia
+      </button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

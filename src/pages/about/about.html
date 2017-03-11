@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Map
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div #map id="map" style="height:100%;">
+    <ion-fab right bottom>
+      <button ion-fab (click)=recenter()>
+        <ion-icon name="locate"></ion-icon>
+      </button>
+    </ion-fab>
+  </div>
+  <!--<div id="footer" style="height: 10%">
+    <button ion-button full color="dark" clear id="button" (click)="buttonClick()">EMPTY</button>
+  </div>-->
+</ion-content>
